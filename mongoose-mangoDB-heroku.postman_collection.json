@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "d888fd38-f9f0-4e5a-b719-088b61c75e90",
+		"name": "mongoose-mangoDB-heroku",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "新增貼文",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"潔西卡\",\n    \"type\": \"自由心證\",\n    \"tags\": \"MEME\",\n    \"image\": \"https://picsum.photos/960/540?random=3\",\n    \"content\": \"不難發現，問題在於該用什麼標準來做決定呢？薛瑄說過一句發人省思的話，發言須句句有著落方好。人於忙處，言或妄發，所以有悔。但願諸位理解後能從中有所成長。帶著這些問題，我們一起來審視迷迭香。每個人的一生中，幾乎可說碰到迷迭香這件事，是必然會發生的。\",\n    \"likes\": 543,\n    \"comments\": 210\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mongoose-mangodb.herokuapp.com/post",
+					"protocol": "https",
+					"host": [
+						"mongoose-mangodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "修改一則貼文",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"曼巴\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mongoose-mangodb.herokuapp.com/post/625a91c75918249279808a2b",
+					"protocol": "https",
+					"host": [
+						"mongoose-mangodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"625a91c75918249279808a2b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除一則貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"曼巴\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mongoose-mangodb.herokuapp.com/post/625a91c75918249279808a2b",
+					"protocol": "https",
+					"host": [
+						"mongoose-mangodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post",
+						"625a91c75918249279808a2b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "取得全部貼文",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"潔西卡\",\n    \"type\": \"自由心證\",\n    \"tags\": \"MEME\",\n    \"image\": \"https://picsum.photos/960/540?random=3\",\n    \"content\": \"不難發現，問題在於該用什麼標準來做決定呢？薛瑄說過一句發人省思的話，發言須句句有著落方好。人於忙處，言或妄發，所以有悔。但願諸位理解後能從中有所成長。帶著這些問題，我們一起來審視迷迭香。每個人的一生中，幾乎可說碰到迷迭香這件事，是必然會發生的。\",\n    \"likes\": 543,\n    \"comments\": 210\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mongoose-mangodb.herokuapp.com/post",
+					"protocol": "https",
+					"host": [
+						"mongoose-mangodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "刪除全部貼文",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"潔西卡\",\n    \"type\": \"自由心證\",\n    \"tags\": \"MEME\",\n    \"image\": \"https://picsum.photos/960/540?random=3\",\n    \"content\": \"不難發現，問題在於該用什麼標準來做決定呢？薛瑄說過一句發人省思的話，發言須句句有著落方好。人於忙處，言或妄發，所以有悔。但願諸位理解後能從中有所成長。帶著這些問題，我們一起來審視迷迭香。每個人的一生中，幾乎可說碰到迷迭香這件事，是必然會發生的。\",\n    \"likes\": 543,\n    \"comments\": 210\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mongoose-mangodb.herokuapp.com/post",
+					"protocol": "https",
+					"host": [
+						"mongoose-mangodb",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
